@@ -1,0 +1,10 @@
+JS Features
+Populate the state list automatically
+
+Detect which page is open
+
+Display the correct capital
+
+Load the correct image
+
+Fill the cities list dynamically
