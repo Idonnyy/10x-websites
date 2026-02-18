@@ -1,4 +1,4 @@
-console.log("stateList element:", stateList);
+
 // 1-5: Grab DOM elements
 const stateList = document.getElementById("stateList"); // 1
 const stateName = document.getElementById("stateName"); // 2
@@ -22,8 +22,14 @@ if (stateList) { // 13
         a.href = "state.html?name=" + state.name.toLowerCase(); // 18
         li.appendChild(a); // 19
         stateList.appendChild(li); // 20
-    }); // 21
-} // 22
+    });
+    } else {
+    console.error("stateList UL not found!");
+}
+
+
+ // 21
+ // 22
 
 // 24-34: Load a single state page if using URLSearchParams
 const params = new URLSearchParams(window.location.search); // 24
@@ -43,6 +49,7 @@ if (stateData) { // 27
         });
     }
 }
+console.log("stateList element:", stateList);
 
 
 
