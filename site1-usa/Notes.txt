@@ -1,10 +1,14 @@
 JS Features
 Populate the state list automatically
-
 Detect which page is open
-
 Display the correct capital
-
 Load the correct image
-
 Fill the cities list dynamically
+
+
+Get URL path
+Split into parts
+Take last part
+Clean the name
+Use it as a key to load data
+window.location.pathname.split("/").pop().replace("html","").toLowerCase();. 
