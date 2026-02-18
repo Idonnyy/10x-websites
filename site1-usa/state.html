@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Correct src attribute and defer -->
+    <script src="script1.js" defer></script>
+</head>
+<body>
+    <div id="grid_container">
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href=styles.css>
-        <script href="script1.js" defer></script>
+        <!-- HEADER -->
+        <header>
+            <h1 id="stateName">State Name</h1> <!-- Populated by JS -->
+        </header>
 
-    </head>
-    <body>
-        <div id="grid_container"> 
-            <header>
-                <h1 id="stateName">State</h1>
-            </header>
         <!-- NAVIGATION -->
         <nav id="nav">
             <ul>
@@ -22,26 +25,27 @@
             </ul>
         </nav>
 
-            <section>
-                <h2 id="stateCapital">Capital</h2>
-                <img id="stateCptImage" src="" alt="capital image">
-            </section>
+        <!-- STATE DETAILS -->
+        <section id="stateDetails">
+            <h2 id="stateCapital">Capital</h2>
+            <img id="stateCptImage" src="" alt="Capital Image">
+        </section>
 
-            <aside>
-                <h3>Major Cities</h3>
-                <ul id="cities"></ul>
-            </aside>
-        
-        </div>
+        <!-- MAJOR CITIES -->
+        <aside>
+            <h3>Major Cities</h3>
+            <ul id="cities"></ul> <!-- Populated by JS -->
+        </aside>
 
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p>USA Project</p>
     </footer>
-
-    </body>
-
-
+</body>
 </html>
+
 <!-- ID's
 ___________
 stateName - h1

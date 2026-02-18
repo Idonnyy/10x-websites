@@ -1,0 +1,3 @@
+Dynamic Pages are not loading the state data. 
+- Fix script element cause error href correct to src.
+

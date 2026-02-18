@@ -1,0 +1,5 @@
+Fix the State list style in CSS.
+Add in another 10 states.
+Add in Pictures for the current Captials.
+Fix the Home page to reflect United State captial.
+Theme the page to Be USA themed.
