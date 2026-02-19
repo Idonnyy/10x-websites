@@ -86,6 +86,13 @@ footer {
     border-radius: 12px;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
 @media(max-width:1040px) {
     #grid_container {
         grid-template-columns: 1fr;
