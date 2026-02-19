@@ -2,7 +2,7 @@ const gameName = document.getElementById("gameName");
 const gameGenre = document.getElementById("gameGenre");
 const gameDescription = document.getElementById("gameDescription");
 const gameFeatures = document.getElementById("gameFeatures");
-const gameList =document.getElementById("gameList");
+const gameList = document.getElementById("gameList");
 const games = [
     {
         name: "World of Warcraft",
@@ -26,23 +26,23 @@ const games = [
 
 if(gameList) {
     games.forEach(game => {
-        const li = document.CreateElement("li");
-        const a = document.CreateElement("a");
+        const li = document.createElement("li");
+        const a = document.createElement("a");
 
-        li.textContent = game.name;
-        a.href = "game.html?name=" + game.name.toLowerCase;
+        a.textContent = game.name;
+        a.href = "game.html?name=" + game.name.toLowerCase();
 
-        li.appendChild(li);
-        li.appendchild(a);
+        li.appendChild(a);
+        gameList.appendChild(li);
 
     })
 }
 
 const param = new URLSearchParams(window.location.search);
 const gameKey = param.get("name");
-const gameData = games.find(game => {
-    game.name.toLowerCase === gameKey
-});
+const gameData = games.find(game => 
+    game.name.toLowerCase() === gameKey
+);
 
 if(gameData){
     if (gameName) gameName.textContent = gameData.name;
@@ -51,8 +51,8 @@ if(gameData){
 
     if(gameFeatures) {
         gameFeatures.innerHTML = ""; //before every list;array
-        gameFeatures.forEach(feature => {
-            const li = document.CreateElement("li");
+        gameData.forEach(feature => {
+            const li = document.createElement("li");
             li.textContent = feature;
             gameFeatures.appendChild(li);
 
