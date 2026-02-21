@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background:#f0f0f0;
+}
+
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    position: relative;
+    grid-column: 1 / 3;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 15px;
+    box-shadow: 10px;
+    
+}
+
+.back-btn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* vertically center */
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    color: darkgoldenrod;
+}
+
+nav {
+    grid-column: 1 / 3;
+    text-align: center;
+    padding: 10px;
+    background: #ddd; /* This line is good color blend with the header use    margin-bottom: 5px; to see the seperation*/
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color:darkgoldenrod;
+}
+
+
+section {
+    grid-column: 2 / 3;
+    background: #f0f0f0;
+    font-size: 20px;
+    
+}
+
+section li{
+    list-style: none;
+    font-size: 20px;
+    
+}
+
+section a { 
+    text-decoration: none;
+    color: black;
+    
+}
+section a:hover {
+    color: darkgoldenrod;
+}
+
+aside {
+    position: relative;
+    grid-column: 1 / 2;
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 10px;
+    left: 15px;
+    font-size: 20px;
+    border-top: solid darkgoldenrod;
+}
+
+
+footer {
+    grid-column: 1 / 3;
+    text-align: center;
+    padding: 15px;
+    background: #eee;
+}
