@@ -1,0 +1,23 @@
+URLSearchParams
+
+Array.find()
+
+DOM targeting
+
+Proper conditionals
+
+Data normalization
+
+Debugging logic flow
+
+Structured layout
+
+Card UI
+
+Hover animations
+
+Responsive design
+
+Visual depth
+
+Color hierarchy

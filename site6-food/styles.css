@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #c0392b, #e9ecef);
+    color: #222;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #c0392b;
+    padding: 20px;
+    text-align: center;
+}
+
+.highlight {
+    color: white;
+    font-size: 2rem;
+}
+
+nav {
+   background: linear-gradient(to right, #c0392b, #e9ecef);
+    box-shadow: 10px white;
+    border-top: solid white thin;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#foodList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#foodList li {
+    margin: 20px 0;
+}
+
+#foodList a {
+    display: block;
+    padding: 12px;
+    background-color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #c0392b;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    font-size: 2.5rem;
+}
+
+#foodList a:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(to right, #c0392b, #000000 5%);
+}
+
+h2{
+    display: block;
+    padding: 12px;
+    background-color: #000000;
+    border-radius: 4px;
+    color: #c0392b;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 4rem;
+}
+
+#foodList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#foodImage {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+#foodIngredient {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+#foodIngredient li {
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #c0392b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#foodOrigin {
+    grid-template-rows: 2/3;
+}
