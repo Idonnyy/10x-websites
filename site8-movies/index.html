@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <script src="movies.js"></script>
-    </head> 
-    <body>
-        <div id="grid_container">
-            <header><h2>Movie Selection</h2>
-            </header>
-            <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="movies.js" defer></script>
+    <title>Movie Selection</title>
+</head> 
+<body>
+    <div id="grid_container">
+        <header>
+            <h2>Movie Selection</h2>
+        </header>
+
+        <nav>
+            <ul>
                 <li><a href="index.html">Home</a></li>
-            </nav>
+            </ul>
+        </nav>
 
-            <main>
-                <section>
-                <h3>Move List</h3>
+        <main>
+            <section>
+                <h3>Movie List</h3>
                 <ul id="movieList"></ul>
-                </section>
+            </section>
 
-                <aside id="moviesListImages">
-                    <img src="" alt="Movie Images">
-                </aside>
-            </main>
-            <footer>
-                footer
-            </footer>
-        </div>
-    </body>
+            <aside id="moviesListImages"></aside>
+        </main>
+
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
 </html>

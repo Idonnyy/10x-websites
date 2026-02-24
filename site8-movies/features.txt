@@ -1,0 +1,2 @@
+Set the movie image to an image of that genre
+Add a animation based on the movie type to the screen.
