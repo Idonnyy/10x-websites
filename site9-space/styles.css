@@ -1,0 +1,57 @@
+/* Reset & base styles */
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: silver;
+    background-color: black;
+    margin: 0;
+}
+
+/* Main container */
+#grid_container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* header, nav, section, footer */
+    min-height: 100vh;
+}
+
+/* Header / nav / section / footer spacing */
+header, nav, section, footer {
+    padding: 20px;
+}
+
+/* Space card grid */
+#spaceList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    /* optional visual border for debugging */
+    border: dotted white;
+}
+
+/* Individual cards */
+.space-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.category-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
